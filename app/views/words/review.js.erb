@@ -3,9 +3,15 @@ console.log("reached review JS file")
 
 function addReview(reviewHTML) {
   var reviews = document.getElementById('reviews');
-  reviews.insertAdjacentHTML('beforeend', reviewHTML);
+  var data_review = document.getElementById('restaurant_data');
+  var json = data_review.getAttribute("data-reviews");
+  // var jsonvar = JSON.parse(data_review.dataset.reviews);
+  console.log(json);
+  reviews.insertAdjacentHTML('beforeend', json);
 }
 
 
-addReview('<%= j render "show", review2: "my plain text review through JS file" %>');
+addReview('<%= j render "show", review2: json %>');
+
+
 

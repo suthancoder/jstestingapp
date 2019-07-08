@@ -9,7 +9,7 @@
 
 
 <% @restaurants.each do |restaurant| %>
-  <div class="row" id="restaurant_data">
+  <div class="row" id="restaurant_data" data-reviews="<%= @reviews  %>" >
     <div class="card col-xs-3" id="reviews">
       <p>Good place</p>
     </div>

@@ -2,13 +2,14 @@ class WordsController < ApplicationController
 
   def home
     @restaurants = ["mcdonalds", "burger king"]
-    @reviews = ["review1", "review2"]
+    @reviews = "hello all"
     @people = ["tom", "harry"]
   end
 
   def show
     @restaurants = ["mcdonalds", "burger king"]
-    @reviews = ["review1", "review2"]
+    @reviews = "review1"
+
 
   end
 
