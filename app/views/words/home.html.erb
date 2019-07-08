@@ -1,15 +1,15 @@
-<div class="container">
+ <div class="container">
 
   <h1>Learning tool menu!</h1>
 
 </div>
 
 
-<div class="container">
+<div id="restaurant_data" class="container" data-reviews="<%= @reviews  %>">
 
 
 <% @restaurants.each do |restaurant| %>
-  <div class="row" id="restaurant_data" data-reviews="<%= @reviews  %>" >
+  <div class="row"   >
     <div class="card col-xs-3" id="reviews">
       <p>Good place</p>
     </div>

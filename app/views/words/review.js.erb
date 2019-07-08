@@ -1,17 +1,18 @@
 console.log("reached review JS file")
 
-
-function addReview(reviewHTML) {
-  var reviews = document.getElementById('reviews');
-  var data_review = document.getElementById('restaurant_data');
-  var json = data_review.getAttribute("data-reviews");
-  // var jsonvar = JSON.parse(data_review.dataset.reviews);
-  console.log(json);
-  reviews.insertAdjacentHTML('beforeend', json);
-}
+var data_review = document.getElementById('restaurant_data');
+var hell = data_review.dataset.reviews
+console.log(hell)
 
 
-addReview('<%= j render "show", review2: json %>');
+
+
+var reviews = document.getElementById('reviews');
+reviews.insertAdjacentHTML('beforeend', hell);
+
+
+
+
 
 
 
