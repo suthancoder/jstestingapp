@@ -1,5 +1,5 @@
 console.log("reached review JS file")
-
+console.log("<%= @restaurant %>")
 var data_review = document.getElementById('restaurant_data');
 var hell = data_review.dataset.reviews
 console.log(hell)
@@ -7,7 +7,7 @@ console.log(hell)
 
 
 
-var reviews = document.getElementById('reviews');
+var reviews = document.getElementById('<%= @restaurant %>');
 reviews.insertAdjacentHTML('beforeend', hell);
 
 

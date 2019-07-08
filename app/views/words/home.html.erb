@@ -10,11 +10,11 @@
 
 <% @restaurants.each do |restaurant| %>
   <div class="row"   >
-    <div class="card col-xs-3" id="reviews">
+    <div class="card col-xs-3" id=<%= restaurant %>>
       <p>Good place</p>
     </div>
     <div class="card col-xs-3" id="restaurant">
-      <p><%= link_to restaurant, review_path, remote: true %></p>
+      <p><%= link_to restaurant, review_path(restaurant: restaurant), remote: true  %></p>
     </div>
     <div class="card col-xs-3">
       <p>A Mills</p>
