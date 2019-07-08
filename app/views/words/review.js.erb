@@ -1,0 +1,11 @@
+console.log("reached review JS file")
+
+
+function addReview(reviewHTML) {
+  var reviews = document.getElementById('reviews');
+  reviews.insertAdjacentHTML('beforeend', reviewHTML);
+}
+
+
+addReview('<%= j render "show", review2: "my plain text review through JS file" %>');
+
